@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="70dp"
+    android:gravity="left">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/man" />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/stuName"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="40sp"
+            android:text="sName" />
+        <TextView
+            android:id="@+id/stuId"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:text="sId" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="right">
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/error"/>
+    </LinearLayout>
+</LinearLayout>

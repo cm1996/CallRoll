@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="left"
+        android:id="@+id/teacher_pic"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher_name"
+        android:text="教师姓名"
+        android:layout_toRightOf="@+id/teacher_pic"
+        android:layout_toEndOf="@+id/teacher_pic"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/course_name"
+        android:text="无课程"
+        android:layout_below="@+id/teacher_name"
+        android:layout_toRightOf="@+id/teacher_pic"
+        android:layout_toEndOf="@+id/teacher_pic"
+        android:layout_alignBaseline="@id/teacher_pic"
+        android:textSize="30sp"/>
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/teacher_pic"
+        android:layout_above="@id/call_roll"
+        android:src="@drawable/exclamation_symbol"
+        />
+</RelativeLayout>

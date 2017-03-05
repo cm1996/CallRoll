@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="left"
+        android:id="@+id/teacher_pic"
+        android:src="@drawable/woman"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher_name"
+        android:text="教师姓名"
+        android:layout_toRightOf="@id/teacher_pic"
+        android:layout_toEndOf="@id/teacher_pic"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/course_name"
+        android:text="课程名，地点"
+        android:layout_below="@id/teacher_name"
+        android:layout_toRightOf="@id/teacher_pic"
+        android:layout_toEndOf="@id/teacher_pic"
+        android:layout_alignBaseline="@id/teacher_pic"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/call_roll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="点名"
+        android:onClick="onCRButtonClick"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_pic"
+        android:layout_above="@id/call_roll"
+        android:id="@+id/student_list"
+    />
+
+</RelativeLayout>
